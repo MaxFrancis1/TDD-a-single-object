@@ -1,8 +1,13 @@
 class Dice_game
   
-  def roll
-    
-    "You rolled"
+  def initialize
+    value = rand(7)
+    @value = value
   end
   
+  def roll
+    @value
+  end
+  
+
 end
