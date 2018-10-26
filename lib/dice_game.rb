@@ -1,13 +1,9 @@
 class Dice_game
-  
-  def initialize
-    value = rand(7)
-    @value = value
+
+  def roll(num)
+    num.times do
+      puts rand(1...7)
+    end
   end
-  
-  def roll
-    @value
-  end
-  
 
 end
