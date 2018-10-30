@@ -1,13 +1,13 @@
 class Dice_game
 
-  def dice
-    possibilities = [1, 2, 3, 4, 5, 6].sample
+  def initialize
+    srand 1
   end
 
   def roll(x)
     dice_rolls = []
     x.times do
-       dice_rolls.push(dice)
+       dice_rolls.push(rand(1..6))
     end
     dice_rolls
   end

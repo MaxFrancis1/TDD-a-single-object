@@ -11,8 +11,8 @@ describe Dice_game do
 
     it 'Rolls Two dice' do
       output = subject.roll(2)
-      expect(output[0]).to be_between(1, 6)
-      expect(output[1]).to be_between(1, 6)
+      expect(output[0]).to eq(6)
+      expect(output[1]).to eq(4)
     end
 
   end
