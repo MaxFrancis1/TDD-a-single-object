@@ -1,9 +1,5 @@
 class Dice_game
 
-  def initialize
-    srand 1
-  end
-
   def roll(x)
     dice_rolls = []
     x.times do

@@ -10,6 +10,7 @@ describe Dice_game do
     end
 
     it 'Rolls Two dice' do
+      srand(1)
       output = subject.roll(2)
       expect(output[0]).to eq(6)
       expect(output[1]).to eq(4)
